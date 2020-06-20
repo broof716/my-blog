@@ -1,7 +1,9 @@
 import React from 'react';
 import ArticlesList from '../components/ArticlesList';
+import NotFoundPage from './NotFoundPage';
 import articleContent from './article-content';
 
+if (!article) return <NotFoundPage />
 
 const ArticlePage = ({ match }) => {
   const name = match.params.name;
